@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>test stworka</title>
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+		</style>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="indicator">
+				<svg
+					height="60"
+					width="60"
+				>
+					<circle
+						stroke="white"
+						stroke-opacity="0.5"
+						stroke-width="1"
+						fill="transparent"
+						r="29"
+						cx="30"
+						cy="30"
+					></circle>
+					<circle
+						class="progress"
+						stroke="white"
+						stroke-width="2"
+						fill="transparent"
+						r="29"
+						cx="30"
+						cy="30"
+						transform="rotate(-90 30 30)"
+						stroke-linecap="round"
+						stroke-dasharray="182 182"
+					></circle>
+					<text
+						text-anchor="middle"
+						alignment-baseline="middle"
+						x="30"
+						y="31"
+						class="counter"
+					>
+						0/7
+					</text>
+				</svg>
+			</div>
+			<div class="content">
+				<div class="checkList">Чеклист</div>
+				<div class="description">Выполнено: 0 из 7 действий</div>
+				<div class="nextAction">
+					Следующее действие: Созвониться с клиентом до 23.05.24 12:00
+				</div>
+			</div>
+			<div class="button">Открыть чеклист</div>
+		</div>
+	</body>
+</html>
